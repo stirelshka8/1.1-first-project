@@ -36,6 +36,6 @@ def workdir_view(request):
     # который возвращает список файлов в рабочей 
     # директории
     context = {
-        'data_dir': glob.glob("*")
+        'data_dir': glob.glob("*",)
     }
     return render(request, template_name, context)
